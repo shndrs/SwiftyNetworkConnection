@@ -24,6 +24,8 @@
 		F46D253826B6795B007A959F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D253726B6795B007A959F /* APIError.swift */; };
 		F46D253A26B679FD007A959F /* SNCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D253926B679FD007A959F /* SNCRequest.swift */; };
 		F46D253C26B67BFB007A959F /* SNCHttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D253B26B67BFB007A959F /* SNCHttpMethods.swift */; };
+		F46D253E26B680C3007A959F /* SNCBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D253D26B680C3007A959F /* SNCBody.swift */; };
+		F46D254026B681FA007A959F /* SNCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D253F26B681FA007A959F /* SNCResponse.swift */; };
 		OBJ_22 /* SwiftyNetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SwiftyNetworkConnection.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* SwiftyNetworkConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* SwiftyNetworkConnectionTests.swift */; };
@@ -51,6 +53,8 @@
 		F46D253726B6795B007A959F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		F46D253926B679FD007A959F /* SNCRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCRequest.swift; sourceTree = "<group>"; };
 		F46D253B26B67BFB007A959F /* SNCHttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCHttpMethods.swift; sourceTree = "<group>"; };
+		F46D253D26B680C3007A959F /* SNCBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCBody.swift; sourceTree = "<group>"; };
+		F46D253F26B681FA007A959F /* SNCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNCResponse.swift; sourceTree = "<group>"; };
 		OBJ_12 /* SwiftyNetworkConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNetworkConnectionTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				F46D253726B6795B007A959F /* APIError.swift */,
 				F46D253926B679FD007A959F /* SNCRequest.swift */,
 				F46D253B26B67BFB007A959F /* SNCHttpMethods.swift */,
+				F46D253D26B680C3007A959F /* SNCBody.swift */,
+				F46D253F26B681FA007A959F /* SNCResponse.swift */,
 			);
 			name = SwiftyNetworkConnection;
 			path = Sources/SwiftyNetworkConnection;
@@ -221,7 +227,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_22 /* SwiftyNetworkConnection.swift in Sources */,
+				F46D253E26B680C3007A959F /* SNCBody.swift in Sources */,
 				F46D253826B6795B007A959F /* APIError.swift in Sources */,
+				F46D254026B681FA007A959F /* SNCResponse.swift in Sources */,
 				F46D253A26B679FD007A959F /* SNCRequest.swift in Sources */,
 				F46D253C26B67BFB007A959F /* SNCHttpMethods.swift in Sources */,
 			);

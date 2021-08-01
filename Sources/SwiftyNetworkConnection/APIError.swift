@@ -11,6 +11,6 @@ public enum APIError: Error {
     
     case reponseError
     case decodingError
-    case unknownError
+    case encodingError
     
 }
