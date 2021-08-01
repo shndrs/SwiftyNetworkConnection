@@ -7,8 +7,10 @@
 
 import Foundation
 
-enum APIError: Error {
+public enum APIError: Error {
+    
     case reponseError
     case decodingError
     case unknownError
+    
 }
