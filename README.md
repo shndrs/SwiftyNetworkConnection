@@ -1,3 +1,3 @@
 # SwiftyNetworkConnection
 
-A description of this package.
+It's a swift network and API framework... 
