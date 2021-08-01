@@ -1,0 +1,4 @@
+module SwiftyNetworkConnection {
+    header "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection-Swift.h"
+    requires objc
+}

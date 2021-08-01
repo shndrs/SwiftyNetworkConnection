@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "1e4db7b7bdd14aba3a55401d28f5e9b4"
+build_time: [1627799790, 50171000]
+inputs:
+  "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Sources/SwiftyNetworkConnection/SwiftyNetworkConnection.swift": [1627799525, 788604808]

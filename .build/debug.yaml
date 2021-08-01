@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SwiftyNetworkConnection-debug.module": ["<SwiftyNetworkConnection-debug.module>"]
+  "SwiftyNetworkConnectionPackageTests-debug.test": ["<SwiftyNetworkConnectionPackageTests-debug.test>"]
+  "SwiftyNetworkConnectionTests-debug.module": ["<SwiftyNetworkConnectionTests-debug.module>"]
+  "main": ["<SwiftyNetworkConnection-debug.module>"]
+  "test": ["<SwiftyNetworkConnection-debug.module>","<SwiftyNetworkConnectionPackageTests-debug.test>","<SwiftyNetworkConnectionTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Sources/SwiftyNetworkConnection/":
+    is-directory-structure: true
+  "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Tests/SwiftyNetworkConnectionTests/":
+    is-directory-structure: true
+commands:
+  "<SwiftyNetworkConnection-debug.module>":
+    tool: phony
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection.swift.o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.swiftmodule"]
+    outputs: ["<SwiftyNetworkConnection-debug.module>"]
+
+  "<SwiftyNetworkConnectionPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionPackageTests.xctest/Contents/MacOS/SwiftyNetworkConnectionPackageTests"]
+    outputs: ["<SwiftyNetworkConnectionPackageTests-debug.test>"]
+
+  "<SwiftyNetworkConnectionTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.build/SwiftyNetworkConnectionTests.swift.o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.swiftmodule"]
+    outputs: ["<SwiftyNetworkConnectionTests-debug.module>"]
+
+  "C.SwiftyNetworkConnection-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Sources/SwiftyNetworkConnection/SwiftyNetworkConnection.swift"]
+    outputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection.swift.o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyNetworkConnection"
+    module-output-path: "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.swiftmodule"
+    import-paths: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build"
+    objects: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection-Swift.h","-color-diagnostics"]
+    sources: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Sources/SwiftyNetworkConnection/SwiftyNetworkConnection.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "C.SwiftyNetworkConnectionPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.build/SwiftyNetworkConnection.swift.o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.build/SwiftyNetworkConnectionTests.swift.o"]
+    outputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionPackageTests.xctest/Contents/MacOS/SwiftyNetworkConnectionPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionPackageTests.xctest/Contents/MacOS/SwiftyNetworkConnectionPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug","-o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionPackageTests.xctest/Contents/MacOS/SwiftyNetworkConnectionPackageTests","-module-name","SwiftyNetworkConnectionPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-Xlinker","-add_ast_path","-Xlinker","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.SwiftyNetworkConnectionTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Tests/SwiftyNetworkConnectionTests/SwiftyNetworkConnectionTests.swift","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnection.swiftmodule"]
+    outputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.build/SwiftyNetworkConnectionTests.swift.o","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "SwiftyNetworkConnectionTests"
+    module-output-path: "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.swiftmodule"
+    import-paths: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.build"
+    objects: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/SwiftyNetworkConnectionTests.build/SwiftyNetworkConnectionTests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Tests/SwiftyNetworkConnectionTests/SwiftyNetworkConnectionTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Sources/SwiftyNetworkConnection/","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Tests/SwiftyNetworkConnectionTests/","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Package.swift","/Users/home/Documents/SHNDProjects/Frameworks/SwiftyNetworkConnection/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
