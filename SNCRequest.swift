@@ -12,7 +12,9 @@ open class SNCRequest: NSObject {
     private let url: URL
     
     public init(url: String) {
-        guard let baseUrl = URL(string: url) else { fatalError("Failed Fetching url") }
+        guard let baseUrl = URL(string: url) else {
+            fatalError("Failed Fetching url")
+        }
         self.url = baseUrl
     }
     

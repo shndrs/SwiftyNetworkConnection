@@ -121,22 +121,13 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* SwiftyNetworkConnection */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* SwiftyNetworkConnection */ = {
-			isa = PBXGroup;
-			children = (
 				F46D253726B6795B007A959F /* APIError.swift */,
 				F46D253926B679FD007A959F /* SNCRequest.swift */,
 				F46D253B26B67BFB007A959F /* SNCHttpMethods.swift */,
 				F46D253D26B680C3007A959F /* SNCBody.swift */,
 				F46D253F26B681FA007A959F /* SNCResponse.swift */,
 			);
-			name = SwiftyNetworkConnection;
-			path = Sources/SwiftyNetworkConnection;
+			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
